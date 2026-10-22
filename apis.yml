@@ -1,25 +1,54 @@
 aid: black-diamond-therapeutics
+
 name: Black Diamond Therapeutics
-description: 'Black Diamond Therapeutics is a company surfaced via the API Evangelist harvest backlog
-  (source: vc-portfolio; backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Black Diamond Therapeutics is a biotechnology company focused on developing precision oncology therapies using its proprietary platform that designs and optimizes small-molecule drugs. The firm leverages advanced computational chemistry and structural biology to target cancer-driving mutations, aiming to bring innovative treatments to patients. Backed by NEA and other investors, Black Diamond Therapeutics is building a pipeline of candidates across multiple tumor types and is actively expanding its research collaborations and clinical programs.'
+
 url: https://raw.githubusercontent.com/api-evangelist/black-diamond-therapeutics/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Oncology
+- PrecisionMedicine
+- DrugDiscovery
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common:
+- type: Hosts
+  url: hosts/black-diamond-therapeutics-hosts.yml
+- type: DomainSecurity
+  url: security/black-diamond-therapeutics-domain-security.yml
+- type: Website
+  url: https://blackdiamondtherapeutics.com
+- type: PrivacyPolicy
+  url: https://blackdiamondtherapeutics.com/privacy-policy
+
+apis: []
+
 x-backed-by:
 - nea
-common:
-- type: Website
-  url: https://www.blackdiamondtherapeutics.com
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

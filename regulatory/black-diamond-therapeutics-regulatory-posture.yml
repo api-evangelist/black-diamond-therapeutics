@@ -1,0 +1,20 @@
+generated: '2026-10-22'
+method: probed
+source: https://blackdiamondtherapeutics.com/privacy-policy
+signals:
+  data_subject_request:
+    url: https://blackdiamondtherapeutics.com/privacy-policy
+    note: Provides a mechanism for data subjects to request review, correction, or update of their personal data.
+    evidence:
+      - source: https://blackdiamondtherapeutics.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "If you would like to request to review, correct, or update any Personal Data that you have provided to us, you may contact us as indicated in the “Contacting Company” section below."
+  data_retention:
+    url: https://blackdiamondtherapeutics.com/privacy-policy
+    note: States retention period is purpose‑based and indefinite until no longer needed.
+    evidence:
+      - source: https://blackdiamondtherapeutics.com/privacy-policy
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "The Company will retain your Personal Data for as long as needed or permitted for the purpose(s) for which it was provided to us or obtained by us and as outlined in this Privacy Policy."
